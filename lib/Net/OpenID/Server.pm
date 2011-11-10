@@ -826,7 +826,7 @@ __END__
 
 =head1 NAME
 
-Net::OpenID::Server - Library for building your own OpenID server
+Net::OpenID::Server - Library for building your own OpenID server/provider
 
 =head1 SYNOPSIS
 
@@ -1023,7 +1023,7 @@ not touched.  It's simply given back to your other callbacks
 
 =item $code = $nos->B<get_identity>; $identity = $code->($u, $identity);
 
-For OpenID 2.0. Get/set the subref returning a identity. This is called 
+For OpenID 2.0. Get/set the subref returning a identity. This is called
 when claimed identity is 'identifier_select'.
 
 =item $nos->B<is_identity>($code)
